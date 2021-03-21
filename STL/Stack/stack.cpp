@@ -1,11 +1,11 @@
 /*
-Stack
+Program to demonstrate a basic Stack and its funtions
 
-empty() – Returns whether the stack is empty – Time Complexity : O(1) 
-size() – Returns the size of the stack – Time Complexity : O(1) 
-top() – Returns a reference to the top most element of the stack – Time Complexity : O(1) 
-push(g) – Adds the element ‘g’ at the top of the stack – Time Complexity : O(1) 
-pop() – Deletes the top most element of the stack – Time Complexity : O(1) 
+empty() â€“ Returns whether the stack is empty â€“ Time Complexity : O(1) 
+size() â€“ Returns the size of the stack â€“ Time Complexity : O(1) 
+top() â€“ Returns a reference to the top most element of the stack â€“ Time Complexity : O(1) 
+push(g) â€“ Adds the element â€˜gâ€™ at the top of the stack â€“ Time Complexity : O(1) 
+pop() â€“ Deletes the top most element of the stack â€“ Time Complexity : O(1) 
 */
 
 #include<iostream>
