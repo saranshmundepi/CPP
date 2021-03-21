@@ -1,3 +1,4 @@
+// A program to print number of elements divisible by 2 in a Queue.
 #include<iostream>
 #include<queue>
 
