@@ -1,3 +1,4 @@
+//A program to reverse a Queue using stack
 #include<iostream>
 #include<queue>
 #include<stack>
@@ -13,7 +14,7 @@ int main()
 	Q.push(5);
 	Q.push(8);
 	Q.push(13);
-	// reverse the queue
+	
 	while(!Q.empty())
 	{
 		stk.push(Q.front());
