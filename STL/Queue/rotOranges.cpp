@@ -167,7 +167,7 @@ int main()
 	  {1,0,0,0,1}
     };
 
-	cout<<giveTimeToRot(arrMatrix);
+	cout<<"Min time:"<<giveTimeToRot(arrMatrix);
 
 	return 0;
 }
