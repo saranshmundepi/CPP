@@ -1,7 +1,10 @@
+//A program to swap two variable of same datatype (on any datatype)
+
 #include<iostream>
 using namespace std;
+
 template<class T>
-void swap2(T &a,T &b)
+void swapElements(T &a,T &b)
 {
     T temp=a;
     a=b;
@@ -10,13 +13,16 @@ void swap2(T &a,T &b)
 int main()
 {
     int x=10,y=20;
-    swap2(x,y);
+    swapElements(x,y);
     cout<<x<<" "<<y<<endl;
+    
     char c='e',d='f';
-    swap2(c,d);
+    swapElements(c,d);
     cout<<c<<" "<<d<<endl;
+    
     int *p1=&x,*p2=&y;
-    swap2(p1,p2);
+    swapElements(p1,p2);
     cout<<p1<<" "<<p2;
+    
     return 0;
 }
