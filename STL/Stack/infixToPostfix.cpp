@@ -7,11 +7,11 @@
 
 using namespace std;
 
-int Precedence[4][5]={//   +  -  *  /  (
-                /* + */  { 0, 0, 1, 1,-1},
-                /* - */  { 0, 0, 1, 1,-1},
-                /* * */  {-1,-1, 0, 0,-1},
-                /* / */  {-1,-1, 0, 0,-1}
+int Precedence[4][5]={   //  +   -   *   /   (
+                /* + */  {   0,  0, -1, -1,  1  },
+                /* - */  {   0,  0, -1, -1,  1  },
+                /* * */  {   1,  1,  0,  0,  1  },
+                /* / */  {   1,  1,  0,  0,  1  }
                         };
 int opMap(char op)
 {
@@ -58,7 +58,7 @@ void infixToPostfix(string infix)
 
             if(!stk.empty())
             {
-                if(Precedence[opMap(infix[i])][opMap(stk.top())]==-1)
+                if(Precedence[opMap(infix[i])][opMap(stk.top())]==1)
                     stk.push(infix[i]);
 
                 else
